@@ -1,6 +1,7 @@
 {
   "id": "reunion",
   "name": "cos-testput",
+  "testclé ajout" : "bonjour",
   "vod": {
     "urlCatalogue": "http://vod.canal-overseas.com/vod-subscription-api/services/subscription-c-ald/vectors/66001/contents/",
     "license": {
