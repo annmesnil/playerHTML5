@@ -1,0 +1,132 @@
+{
+"id": "A",
+"name": "cos-testput",
+"testclÃ© ajout": "bonjour",
+"vod": {
+"urlCatalogue": "http://vod.canal-overseas.com/vod-subscription-api/services/subscription-c-ald/vectors/66001/contents/",
+"license": {
+"playready": "http://vod.canal-overseas.com/vod/play/wv",
+"widevine": "http://vod.canal-overseas.com/vod/play/pr"
+},
+"eck": "PC"
+},
+"playerPingLog": {
+"startInterval": [
+20000,
+40000
+],
+"url": "https://secure-webtv.canal-plus.com/RestPortalProvider/PlayerPingCOS.svc/RestCallMethod",
+"provider": "31_webc",
+"appId": "60",
+"flushInterval": 120000
+},
+"pass": {
+"url": "https://secure-webtv.canal-plus.com/RestPortalProvider/Service.svc/RestCallMethod",
+"scriptInfo": "AUTHENTICOS_PORTAL.Authentication",
+"passTimeout": 21600000
+},
+"live": {
+"license": {
+"url": "https://secure-webtv.canal-plus.com/RestPortalProvider/Service.svc/RestCallMethod",
+"scriptInfo": {
+"playready": "30_WEBC_V3_A1.GetDRM",
+"widevine": "31_WEBC_V3_A1.GetLicence"
+}
+}
+},
+"servicePlanUrls": {
+"channels_mobile": "http://service.canal-overseas.com/pds/3_60/Channels.xml"
+},
+"globalChannels": {
+"url": "http://webtv-static.canal-plus.com/metadata/All-cos-v1.1/globalchannels.json",
+"pollInterval": 300000
+},
+"channel": {
+"url": "http://webtv-static.canal-plus.com/metadata/Canal-cos-v1.1/chid{EpgId}.json"
+},
+"programDetail": {
+"url": "http://service.canal-overseas.com/ott-frontend/vector/66001/event"
+},
+"authentication": {
+"url": "https://secure-webtv.canal-plus.com/RestPortalProvider/Service.svc/RestCallMethod",
+"scriptInfo": "31_WEBC_V3_A1.Authentication"
+},
+"inactivity": {
+"inactivityTimeout": 1000000000
+},
+"parental": {
+"url": "lb-fci-vabf.test.cdn/RestPortalProvider/Service.svc/RestCallMethod",
+"scriptInfoCheck": "WEBTV2COS_CP.CheckParent",
+"scriptInfoGet": "WEBTV2COS_CP.GetParent",
+"scriptInfoSet": "WEBTV2COS_CP.SetParent",
+"message": "Ce programme n'est pas disponible en raison de sa nocivitÃ© pour les mineurs."
+},
+"region": {
+"code": "60",
+"name": "RÃ©union",
+"suffix": "REU",
+"websiteUrl": "canalplus-reunion.com",
+"commercialWebsiteLabel": "le site de CANAL+ RÃ©union"
+},
+"errors": {
+"internal": "",
+"core": {
+"timeout": "Impossible d'accÃ©der au contenu, veuillez vÃ©rifier votre connexion internet",
+"unknown": ""
+},
+"session": {
+"maxstream": "Le nombre maximum de connexions simultanÃ©es autorisÃ©es avec votre compte a Ã©tÃ© dÃ©passÃ©. Vous avez Ã©tÃ© dÃ©connectÃ© au profit d'un autre utilisateur. Si cette action a Ã©tÃ© rÃ©alisÃ©e indÃ©pendamment de votre volontÃ©, vous devriez immÃ©diatement modifier le mot de passe de votre compte.",
+"expired": "Votre session de huit heures a expirÃ©. Veuillez redÃ©marrer le lecteur pour poursuivre le visionnage.",
+"unsubscribed": "Cette chaÃ®ne ne fait pas partie de votre abonnement",
+"csa_restricted_hours": "Les programmes adultes ne sont accessibles qu'entre minuit et 5h.",
+"csa_unauthorized": "Les paramÃ¨tres de votre compte ne vous permettent pas d'accÃ©der aux contenus adultes.",
+"csa_broken_metadata": "En raison d'une panne sur les donnÃ©es programme, le flux est interrompu pour risque de contenu CSA 5",
+"no_livepc": "La diffusion en direct de ce programme n'est pas disponible sur votre outil.",
+"no_crypt": "La lecture de ce programme n'est pas autorisÃ©e en chiffrÃ©.",
+"no_startover": "La diffusion en reprise de lecture de ce programme n'est pas autorisÃ©e sur votre outil."
+},
+"webservice": {
+"unknown": "Impossible d'accÃ©der au contenu, veuillez vÃ©rifier votre connexion internet",
+"request": "Une erreur technique a Ã©tÃ© dÃ©tectÃ©e lors de l'accÃ¨s au contenu. Si le problÃ¨me persiste, rendez-vous sur l'assistance de myCANAL.",
+"program": "Impossible d'accÃ©der au contenu",
+"channels": "Impossible d'accÃ©der aux chaÃ®nes",
+"liveaut-2": "Mise Ã  jour technique en cours pour amÃ©liorer le service. Veuillez nous excuser pour la gÃªne occasionnÃ©e et vous reconnecter ultÃ©rieurement au service. Erreur AUT-2",
+"liveaut-3": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  la live TV. Si le problÃ¨me persiste, veuillez contacter le support client CANAL+/CANALSAT. Erreur AUT-3",
+"liveaut-4": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  la live TV. Si le problÃ¨me persiste, veuillez contacter le support client CANAL+/CANALSAT. Erreur AUT-4",
+"liveaut-5": "Vous avez utilisÃ© votre Compte CANAL sur plus de 5 Ã©quipements dans les 3 derniers jours. Pour continuer Ã  utiliser la Live TV avec toutes vos chaÃ®nes vous devez attendre 3 jours maximum, ou appeler le support client de CANAL+/CANALSAT. Erreur AUT-5",
+"liveaut-9": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  la live TV. Si le problÃ¨me persiste, veuillez contacter le support client CANAL+/CANALSAT. Erreur AUT-9",
+"drm-1": "Mise Ã  jour technique en cours pour amÃ©liorer le service. Veuillez nous excuser pour la gÃªne occasionnÃ©e et vous reconnecter ultÃ©rieurement au service. Erreur DRM-1",
+"drm-2": "Mise Ã  jour technique en cours pour amÃ©liorer le service. Veuillez nous excuser pour la gÃªne occasionnÃ©e et vous reconnecter ultÃ©rieurement au service. Erreur DRM-2",
+"drm-3": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  cette chaine. Si le problÃ¨me, persiste veuillez contacter le support client CANAL+/CANALSAT. Erreur DRM-3",
+"drm-4": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  cette chaine. Si le problÃ¨me, persiste veuillez contacter le support client CANAL+/CANALSAT. Erreur DRM-4",
+"drm-5": "Nombre maximum de licences tÃ©lÃ©chargÃ©es atteint. Veuillez vous munir de votre numÃ©ro d'abonnÃ© et appeler le Service Client au 0892 39 39 10 (0.34 cts/min, Horaire d'ouverture : 8h Ã  22h, sauf Dimanche et jours fÃ©riÃ©s). Erreur DRM-5",
+"drm-6": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  cette chaine. Si le problÃ¨me, persiste veuillez contacter le support client CANAL+/CANALSAT. Erreur DRM-6",
+"drm-7": "Un problÃ¨me est survenu lors de l'accÃ¨s Ã  cette chaine. Si le problÃ¨me, persiste veuillez contacter le support client CANAL+/CANALSAT. Erreur DRM-7",
+"conso-3": "Ce contenu ne fait pas partie de votre abonnement. Erreur CONSO-3",
+"conso-9": "DÃ©solÃ©, vous avez atteint le nombre maximum de tÃ©lÃ©chargements pour ce contenu. Vous ne pouvez plus le tÃ©lÃ©charger. Pour plus dâ€™informations, rendez-vous sur lâ€™assistance de myCANAL. Erreur CONSO-9",
+"conso-10": "DÃ©solÃ©, la date de validitÃ© de ce contenu vient dâ€™Ãªtre dÃ©passÃ©e. Vous ne pouvez plus le regarder. Pour plus dâ€™informations, rendez-vous sur lâ€™assistance de myCANAL Erreur CONS-10",
+"conso-12": "Une erreur technique a Ã©tÃ© dÃ©tectÃ©e sur le serveur de vidÃ©o Ã  la demande. Si le problÃ¨me persiste, rendez-vous sur l'assistance de myCANAL. Erreur CONSO-12",
+"conso-22": "DÃ©solÃ©, vous avez atteint le nombre maximum de visionnages pour ce contenu. Vous ne pouvez plus le regarder. Pour plus dâ€™informations, rendez-vous sur lâ€™assistance de myCANAL. Erreur CONSO-22",
+"conso-23": "DÃ©solÃ©, vous avez atteint le nombre maximum de visionnages pour ce contenu. Vous ne pouvez plus le regarder. Pour plus dâ€™informations, rendez-vous sur lâ€™assistance de myCANAL. Erreur CONSO-23",
+"conso-27": "DÃ©solÃ©, vous avez atteint le nombre maximum de visionnages pour ce contenu. Vous ne pouvez plus le regarder. Pour plus dâ€™informations, rendez-vous sur lâ€™assistance de myCANAL. Erreur CONSO-27",
+"conso-28": "DÃ©solÃ©, vous avez atteint le nombre maximum de tÃ©lÃ©chargements pour ce contenu. Vous ne pouvez plus le regarder. Pour plus dâ€™informations, rendez-vous sur lâ€™assistance de myCANAL. Erreur CONSO-28",
+"conso-29": "DÃ©solÃ©, vous avez atteint le nombre maximum de visionnages pour ce contenu. Vous ne pouvez plus le regarder. Pour plus dâ€™informations, rendez-vous sur lâ€™assistance de myCANAL. Erreur CONSO-29",
+"conso-30": "Vous avez utilisÃ© votre Compte CANAL sur plus de 5 Ã©quipements dans les 3 derniers jours. Pour continuer Ã  utiliser la vidÃ©o Ã  la demande vous devez attendre 3 jours maximum, ou appeler le support client de CANAL+/CANALSAT. Erreur CONSO-30",
+"ord-0": "DÃ©solÃ©, ce contenu n'est plus disponible. Erreur ORD-0",
+"ord-14": "Ce contenu est actuellement bloquÃ©. Si le problÃ¨me persiste, rendez-vous sur l'assistance de myCANAL. Erreur ORD-14",
+"ord-16": "Ce contenu ne fait pas partie de votre abonnement. Erreur ORD-16",
+"aut-2": "Votre compte CANAL est actuellement bloquÃ©. Si le problÃ¨me persiste, rendez-vous sur l'assistance de myCANAL. Erreur AUT-2",
+"aut-21": "Votre compte CANAL est actuellement utilisÃ© par un autre utilisateur. Si vous ne connaissez pas cet utilisateur, nous vous conseillons de modifier immÃ©diatement le mot de passe de votre compte. Erreur AUT-21",
+"aut-30": "Une erreur technique a Ã©tÃ© dÃ©tectÃ©e sur le serveur de vidÃ©o Ã  la demande. Si le problÃ¨me persiste, rendez-vous sur l'assistance de CANALPLAY. Erreur AUT-30",
+"cat-1": "Une erreur technique a Ã©tÃ© dÃ©tectÃ©e sur le serveur de vidÃ©o Ã  la demande. Si le problÃ¨me persiste, rendez-vous sur l'assistance de CANALPLAY. Erreur CAT-1",
+"cat-8": "Une erreur technique a Ã©tÃ© dÃ©tectÃ©e sur le serveur de vidÃ©o Ã  la demande. Si le problÃ¨me persiste, rendez-vous sur l'assistance de CANALPLAY. Erreur CAT-8"
+}
+},
+"csaV": {
+"startTime": "00:00:00",
+"endTime": "05:00:00"
+},
+"fallbackEpgId": 60020,
+"liveTVOccultationDateShift": 1000,
+"mycanal": "http://www.canalplus-reunion.com/myCANAL"
+}
